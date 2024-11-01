@@ -18,3 +18,28 @@ elif guess > random_number:
 else:
     print("congratulations you did it")
 
+# Looping Code
+import random
+
+random_number = random.randint(1, 10)
+print("Please guess a number between 1 and 10")
+
+while True:
+    guess = input("Enter your guess: ")
+    
+    try:
+        guess = int(guess)
+    except ValueError:
+        print("Please enter a valid number.")
+        continue
+    
+    if guess < 1 or guess > 10:
+        print("Your number must be between 1 and 10.")
+    elif guess < random_number:
+        print("Please enter a higher number.")
+    elif guess > random_number:
+        print("Please enter a lower number.")
+    else:
+        print("Congratulations! You did it.")
+        break
+        
