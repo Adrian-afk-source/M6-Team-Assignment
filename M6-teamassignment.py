@@ -18,7 +18,7 @@ elif guess > random_number:
 else:
     print("congratulations you did it")
 
-# Looping Code
+#Looping Code
 import random
 
 random_number = random.randint(1, 10)
